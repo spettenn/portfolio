@@ -5,6 +5,7 @@ main {
   width: 100%;
   background-color: #303841;
   padding-top: 3rem;
+  overflow: hidden;
 }
 .top {
   display: flex;
@@ -15,6 +16,10 @@ main {
 }
 h1 {
   margin: 0%;
+}
+h2 {
+  color: white;
+  font-family: monospace;
 }
 #return {
   background-color: #d72323;
@@ -36,11 +41,12 @@ h1 {
 }
 .content {
   width: 100%;
-  height: 50rem;
+  height: 35rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 1rem;
+  flex-wrap: wrap;
 }
 form {
   border: 2px solid #d72323;
@@ -48,7 +54,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 30rem;
-  height: 31rem;
+  height: 33rem;
   padding-left: 20px;
   padding-right: 20px;
   background-image: url(/images/y-so-serious/y-so-serious.png);
@@ -86,4 +92,78 @@ label {
   color: #d72323;
   background-color: white;
   border: #d72323 2px solid;
+}
+#error_message {
+  margin-bottom: 20px;
+  background: #d72323;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 1s ease;
+  color: white;
+  border-radius: 5px;
+}
+.info {
+  height: fit-content;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+.col {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  border-right: 1px solid white;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+}
+.innerRight {
+  width: 100%;
+  padding-left: 1rem;
+}
+h4 {
+  color: white;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+h5 {
+  padding-top: 0.5rem;
+  color: white;
+  font-size: 2rem;
+}
+.icon {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    height: fit-content;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  .top {
+    height: 3rem;
+  }
+  .content {
+    height: 57rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  .inner {
+    flex-wrap: wrap;
+  }
 }

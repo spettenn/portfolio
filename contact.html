@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="contact" content="contact page to reach me, the creator" />
+    <script
+      src="https://kit.fontawesome.com/7d8104ed11.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -15,24 +19,44 @@
   <body>
     <main>
       <div class="top">
-        <a id="return" href="#">Return</a>
+        <a id="return" href="/index.html">Return</a>
         <h1>Contact me</h1>
         <img alt="logo" src="images/logoContact.png" />
       </div>
       <div class="content">
-        <form>
+        <form onsubmit="return validate();">
           <label for="name">Full name:</label>
           <input type="text" id="name" name="name" />
           <label for="eMail">E-mail adress:</label>
           <input type="text" id="eMail" name="eMail" />
           <label for="message">Message:</label>
           <textarea id="message" name="message"></textarea>
+          <div id="error_message"></div>
           <input type="submit" id="submit" value="Submit" />
         </form>
         <div class="info">
           <h2>Other means of contact:</h2>
+          <div class="col">
+            <div class="inner">
+              <i class="fab fa-discord fa-2x icon"></i>
+              <h4>Discord</h4>
+            </div>
+            <div class="innerRight">
+              <h5>Aleksander#1255</h5>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inner">
+              <i class="far fa-envelope fa-2x icon"></i>
+              <h4>E-mail</h4>
+            </div>
+            <div class="innerRight">
+              <h5>Aleksanderspetalen@gmail.com</h5>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <script src="js/form.js"></script>
   </body>
 </html>
